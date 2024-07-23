@@ -27,4 +27,4 @@ async def on_guild_channel_delete(channel: discord.abc.GuildChannel):
     print(f"Recreated voice channel {channel.name}")
 
 
-client.run(os.getenv("TOKEN"))
+client.run(os.environ["TOKEN"])
